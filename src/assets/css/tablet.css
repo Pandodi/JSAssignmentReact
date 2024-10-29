@@ -1,0 +1,399 @@
+/* For tablet */
+@media (min-width: 768px) and (max-width: 1280px){
+    header {
+        width: 100%;
+    }
+    .header-container{
+        display: flex;
+        width: 95%;
+        margin-right: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    nav .btn-burger-menu{
+        padding: 0;
+        margin: 0;
+    }
+
+    .left-side-header {
+        display: flex;
+    }
+
+    .right-side-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .dark-mode-switch h5 {
+        display: block;
+        color: var(--clr-body-text);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .right-side-header {
+        padding-right: 2rem;
+    }
+
+
+    .dark-mode-switch{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding-right: 1rem;
+    }
+
+    .dark-mode-switch .switch-button {
+        width: 46px;
+        height: 24px;
+    }
+
+    .slider::before{
+        height: 16px;
+        width: 16px;
+        
+    }
+
+    input:checked + .slider::before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(22px);
+    }
+
+    .showcase-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .showcase-section .section-container {
+        display: grid;
+        grid-template-columns: repeat(19, minmax(0, 1fr));
+        grid-template-rows: auto;
+        margin: 0 auto;
+    }
+
+    .section-container h1 {
+        grid-column: 5 / 16;
+        width: 100%;
+        font-size: 44px;
+    }
+
+    .section-container #commercial-text {
+        display: none;
+    }
+    .section-container #commercial-text-tablet {
+        display: block;
+        grid-row: 2 / 3;
+        grid-column: 1 / 9;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-top: 5.5rem;
+        align-self: start;
+    }
+
+    #commercial-text-tablet span {
+        font-size: 18px;
+        color: var(--clr-secondary-text);
+        padding-left: 2rem;
+    }
+
+    .section-container .showcase-logos {
+        grid-row: 2 / 3;
+        grid-column: 1 / 7;
+        flex-direction: row;
+        justify-content: left;
+        width: auto;
+        margin-top: 15rem;
+        gap: 1rem;
+        margin-left: 2rem;
+    }
+
+    .showcase-section .apple-logo {
+        margin-top: 0px;
+        width: 126px;
+        height: 44px;
+        text-align: center;
+        justify-content: center;
+        transform: scale(1);
+    }
+
+    .showcase-section .apple-logo img {
+        width: 92px;
+    }
+
+    .showcase-section .google-logo img {
+        width: 104px;
+    }
+    .showcase-section .google-logo {
+        margin-top: 0px;
+        width: 126px;
+        height: 44px;
+        text-align: center;
+        justify-content: center;
+        transform: scale(1);
+    }
+
+    .section-container .discover-more {
+        grid-row: 3 / 4;
+        grid-column: 1 / 6;
+        padding: 0;
+        margin-top: 5rem;
+        margin-left: 2rem;
+        justify-content:unset;
+        display: none;
+    }
+
+    .section-container #phone-image {
+        display: flex;
+        grid-column: 8 / 21;
+        grid-row: 2 / 3;
+        align-self: flex-end;
+        width: 95%;
+    }
+
+    .features-introduction {
+        max-width: 92%;
+    }
+
+    .features-introduction h1 {
+        font-size: 33px;
+    }
+
+    .features-introduction span {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    
+    .features-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, auto); 
+        grid-column: 9 / 21;
+        text-align: left;
+        justify-content: left;
+        row-gap: 2rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .item-container {
+        display: grid;
+        gap: 0;
+    }
+
+    .item-container img {
+        margin: 0 auto;
+        size: 100%;
+        margin-right: 2rem;
+    }
+
+    .how-does-it-work-section .container h1{
+        font-size: 33.5px;
+    }
+
+    .image-slideshow {
+        display: none;
+    }
+
+    .how-does-it-work-section .slideshow-tablet {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 2rem;
+        justify-content: center;
+
+    }
+
+    .how-does-it-work-section #mobile-h2, .how-does-it-work-section #mobile-p {
+        display: none;
+    }
+
+    .how-does-it-work-section .tablet-instructions {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 1rem;
+
+        h2 {
+            font-size: 23px;
+            font-weight: 800;
+            width: 55%;
+
+        }
+
+        p {
+            font-size: 16px;
+            color: var(--clr-secondary-text);
+            width: 57%;
+        
+        }
+    }
+
+    .faq-introduction{
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            width: 50%;
+        }
+        p {
+            font-size: 18px;
+            width: 60%;
+        }
+    }
+
+    .faq-section .container ul {
+        grid-column: 5 / 11;
+        grid-row: 1 / 3;
+        width: 90%;
+        border: none;
+    }
+
+    .faq-item {
+        padding-right: 0;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 
+                    0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+
+        padding-right: 2rem;
+    }
+
+    .faq-section .container ul #mobile-version, .faq-item-text-mobile{
+        display: none;
+    }
+
+    .faq-section .container ul #desktop-version {
+        display: block;
+    }
+
+    .faq-answer-desktop{
+        display: flex;
+        justify-content: end;
+        color: var(--clr-body-text);
+    }
+
+    .contact-us-button {
+        display: none;
+    }
+
+    .faq-item-text-mobile {
+        display: none;
+    }
+
+    .faq-answer-desktop{
+        display: flex;
+        justify-content: end;
+        color: var(--clr-body-text);
+        
+    }
+
+    .faq-with-paragraph {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-auto-rows: max-content;
+    }
+
+    .faq-with-paragraph h3 {
+        grid-column: 1 / 8;
+    }
+
+    .faq-answer-desktop {
+        grid-column: 1 / 10;
+        grid-row: 2 / 2;
+    }
+
+    #desktop-up-arrow {
+        display: flex;
+        justify-self: end;
+        grid-column: 9 / 10;
+
+    }
+
+    #mobile-down-arrow {
+        display: none;
+    }
+
+    .contact-options {
+        display: flex;
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 90%;
+        margin: 0 auto;
+        gap: 1.5rem;
+    }
+
+    .contact-options .option {
+        border: 1.5px solid #E2E5F1;
+        border-radius: 8px;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .contact-options .option p {
+        color: var(--clr-body-text);
+        font-size: 14px;
+        padding-top: 1rem;
+    }
+
+    .contact-options .option #blue {
+        color: var(--clr-primary);
+        font-weight: 600;
+        font-size: 14px;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+    }
+    .contact-options .option #green {
+        color: var(--clr-btn-green);
+        font-weight: 600;
+        font-size: 14px;
+        padding-top: 2rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .subscribe-section .container {
+        display: flex;
+        margin-top: 2rem;
+
+        .subscribe-attention {
+            margin-right: 1rem;
+        }
+
+        .subscribe-form {
+            margin-top: 1.5rem;
+            height: 52px;
+            width: 65%;
+            padding-right: 2rem;
+        }
+    }
+
+    .section-brand {
+        background-color: var(--clr-primary-bg);
+        margin: 0 auto;
+    }
+
+    .brand-section-tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+        img {
+            max-width: 160px;
+        }
+    }
+    
+}
