@@ -31,8 +31,9 @@ const Header = ({onFeaturesClick}) => {
             <div className="left-side-header">
                 <a className="header-logo" href="/"><img src='./src/assets/images/Link.svg' alt="NavLogo"/></a>
                 <a className="header-logo dark-mode" href="/"><img src='./src/assets/images/logo-dark-mode.svg' alt="Logo-Dark-Mode"/></a>
-                <NavLink to="/contact"><nav className="header-features">Contact</nav></NavLink>
+                
                 <NavLink to="/"><nav className="header-features" onClick={onFeaturesClick}>Features</nav></NavLink>
+                <NavLink to="/contact"><nav className="header-features">Contact</nav></NavLink>
             </div>
             
             <div className="right-side-header">
